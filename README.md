@@ -11,17 +11,17 @@
 
 界面如下：
 
-![image-20200729200606596](C:\Users\valley\AppData\Roaming\Typora\typora-user-images\image-20200729200606596.png)
+![image](http://faico.uuunion.cn/image-20200729200606596.png)
 
 
 
-![image-20200729200836680](C:\Users\valley\AppData\Roaming\Typora\typora-user-images\image-20200729200836680.png)
+![image](http://faico.uuunion.cn/image-20200729200836680.png)
 
 
 
 数据库表（id, isbn, book_name, book_cover, author）
 
-![image-20200729201344230](C:\Users\valley\AppData\Roaming\Typora\typora-user-images\image-20200729201344230.png)
+![image](http://faico.uuunion.cn/image-20200729201344230.png)
 
 
 
@@ -29,7 +29,7 @@
 
 创建数据库 bookdb, 创建表 book,  添加字段 id, isbn, book_name, book_cover, author，我是在 Navicat Premium 上手动创建的
 
-![image-20200729201656056](C:\Users\valley\AppData\Roaming\Typora\typora-user-images\image-20200729201656056.png)
+![image](http://faico.uuunion.cn/image-20200729201656056.png)
 
 
 
@@ -49,7 +49,7 @@ $ npm install (或者 npm i 简写)
 
 生成以下目录结构
 
-![image-20200729202510548](C:\Users\valley\AppData\Roaming\Typora\typora-user-images\image-20200729202510548.png)
+![image](http://faico.uuunion.cn/image-20200729202510548.png)
 
 
 
