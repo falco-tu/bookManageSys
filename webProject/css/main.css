@@ -1,0 +1,52 @@
+body{
+  background-color: #eee;
+}
+
+header{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  font-size: 18px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.1);
+  padding: 0 140px 0 20px;
+}
+
+header .app-title{
+  line-height: 60px;
+  font-size: 20px;
+}
+
+#bookListBox,#createBook,#editBook{
+  width: 90vw;
+  min-height: 82vh;
+  padding: 20px;
+  margin: 40px auto;
+  background-color: white;
+}
+
+#bookListBox .btn-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#bookListBox .btn-wrap .list-title{
+  font-size: 20px;
+}
+
+.thumbnail .book-cover{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+#createBook h3, #editBook h3{
+  margin-bottom: 20px;
+}
+
+.form-control{
+  width: 40%;
+}

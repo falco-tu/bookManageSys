@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/lib/backbone.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <span class="app-title">图书管理系统</span>
+</header>
+
+<!--书籍列表页面-->
+<div id="bookListBox">
+  <div class="btn-wrap">
+    <span class="list-title">书籍列表</span>
+    <a href="#create" type="button" class="btn btn-primary">新增书籍</a>
+  </div>
+
+  <div class="row" id="bookListContent">
+    <!--  这里拿到书籍列表的数据 渲染出来  -->
+  </div>
+</div>
+
+<!--新增书籍页面-->
+<div id="createBook">
+  <h3>新增书籍</h3>
+  <form id="createBookForm">
+
+  </form>
+</div>
+
+<!--编辑书籍页面-->
+<div id="editBook">
+  <h3>编辑书籍</h3>
+  <form id="editBookForm">
+
+  </form>
+</div>
+
+<!--书籍列表/书籍模板-->
+<script type="text/template" id="bookItemTemplate">
+  <div class="col-sm-3 col-md-3">
+    <div class="thumbnail" id="bookItem">
+      <img src="<%= book_cover %>" class="book-cover">
+      <div class="caption">
+        <h4><%= book_name %></h4>
+        <p>作者：<%= author %></p>
+        <p><a href="#edit/<%= id %>" class="btn btn-primary" role="button">修改</a> <button class="btn btn-danger" id="btn-delete">删除</button></p>
+      </div>
+    </div>
+  </div>
+</script>
+
+<!--编辑书籍表单-->
+<script type="text/template" id="bookForm">
+  <div class="form-group">
+    <h4>ISBN:</h4>
+    <input type="text" name="isbn" class="form-control" placeholder="ISBN" id="edit-isbn">
+  </div>
+  <div class="form-group">
+    <h4>书名:</h4>
+    <input type="text" name="book_name" class="form-control" placeholder="书名" id="edit-book-name">
+  </div>
+  <div class="form-group">
+    <h4>作者:</h4>
+    <input type="text" name="author" class="form-control" placeholder="作者" id="edit-author">
+  </div>
+  <div class="form-group">
+    <h4>封面:</h4>
+    <input type="text" name="book_cover" class="form-control" placeholder="封面" id="edit-cover">
+  </div>
+  <button id="btn-edit-save" class="btn btn-default">提交</button>
+</script>
+
+
+<script src="js/app/main.js"></script>
+</body>
+</html>
